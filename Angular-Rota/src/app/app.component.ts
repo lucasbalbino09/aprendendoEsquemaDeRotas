@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+  <app-menu></app-menu>
+  <router-outlet></router-outlet>
+  `,
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'Angular-Rota';
+  
 }
